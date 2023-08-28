@@ -1,0 +1,12 @@
+begin;
+VACUUM (VERBOSE, ANALYZE) {{ dag_run.conf['site'] }}_pcornet.meas_obsclin;
+commit;
+begin;
+VACUUM (VERBOSE, ANALYZE) {{ dag_run.conf['site'] }}_pcornet.obs_vaping;
+commit;
+begin;
+VACUUM (VERBOSE, ANALYZE) {{ dag_run.conf['site'] }}_pcornet.ob_tobacco_data;
+commit;
+begin;
+VACUUM (VERBOSE, ANALYZE) {{ dag_run.conf['site'] }}_pcornet.ms;
+commit;
