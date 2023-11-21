@@ -1,0 +1,1 @@
+VACUUM (VERBOSE, ANALYZE) {{ dag_run.conf['site'] }}_pcornet_airflow.specimen_values;
