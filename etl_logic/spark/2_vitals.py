@@ -12,7 +12,7 @@ from io import StringIO
 from typing import Dict
 from pyspark.context import SparkContext
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import length, when, isnull, array_contains, to_date, col, to_timestamp, trim, date_format, concat, lit, coalesce
+from pyspark.sql.functions import length, when, isnull, array_contains, to_date, col, to_timestamp, trim, date_format, concat, lit, coalesce, monotonically_increasing_id
 from pyspark.sql.types import IntegerType, StructType, StructField, StringType, DateType, DecimalType, TimestampType, LongType, DoubleType
 
 #------------------------------ Establish Connections ------------------------------
