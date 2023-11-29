@@ -270,7 +270,7 @@ set
 	result_num = result_num / 1000,
 	result_unit = '10*3/uL'
 where
-	lab_loinc = (
+	lab_loinc in (
         '704-7', -- BASOPHILS
         '731-0', -- LYMPHOCYTES
         '743-5', -- MONOCYTES
