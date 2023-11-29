@@ -453,14 +453,14 @@ def PEDSnet_to_PCORnet_ETL():
     task_id = 'check_orphan_ids',
     conn_id = "{{dag_run.conf['conn_id']}}",
     hook_params={"schema": database_template},
-    sql = 'etl_logic/sql/4_check_orphan_ids.sql',
+    sql = 'etl_logic/sql/3_check_orphan_ids.sql',
     )
 
     harvest = MySQLExecuteQueryOperator(
     task_id = 'harvest',
     conn_id = "{{dag_run.conf['conn_id']}}",
     hook_params={"schema": database_template},
-    sql = 'etl_logic/sql/4_harvest.sql',
+    sql = 'etl_logic/sql/3_harvest.sql',
     )
 
 #----------- Define Task Dependencies within DAG -------------
