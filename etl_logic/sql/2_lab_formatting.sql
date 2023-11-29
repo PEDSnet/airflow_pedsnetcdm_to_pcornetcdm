@@ -278,7 +278,7 @@ where
         '26499-4', -- NEUTROPHILS
         '751-8' -- NEUTROPHILS
     )
-	and result_unit in ('uL','/uL','{#}/uL','{cells}/uL', '/mm3');
+	and result_unit in ('uL','/uL',{% raw %}'{#}/uL'{% endraw %},'{cells}/uL', '/mm3');
 commit;
 
 -- DC 3.13 --> White Blood Cell LOINC codes
